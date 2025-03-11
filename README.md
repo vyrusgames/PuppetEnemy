@@ -3,4 +3,4 @@
 
  Just a friendly little guy who follows you around and makes a ruckus.
 
-** REQUIRES [REPOlib](https://github.com/ZehsTeam/REPOLib), used [REPO Unity Project Patcher](https://github.com/Kesomannen/unity-repo-project-patcher) to develop the mod **
+**REQUIRES [REPOlib](https://github.com/ZehsTeam/REPOLib), used [REPO Unity Project Patcher](https://github.com/Kesomannen/unity-repo-project-patcher) to develop the mod**
