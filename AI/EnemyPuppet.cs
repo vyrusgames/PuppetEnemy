@@ -1,5 +1,6 @@
 using System;
 using Photon.Pun;
+using PuppetEnemy.Modules;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -80,7 +81,14 @@ public class EnemyPuppet : MonoBehaviour
 
         hurtCurve = AssetManager.instance.animationCurveImpact;
         
-        Debug.Log("THE CHUD HAS ARRIVED!!");
+
+        PuppetEnemy.Logger.LogDebug("EnemyPuppet spawned.");
+    }
+
+    private void Start()
+    {
+        PuppetEnemy.Logger.LogDebug("EnemyPuppet | Fixing mixer groups...");
+        Utilities.FixMixerGroups(_enemyParent.gameObject, Utilities.AudioMixerGroupType.Sound);
     }
 
     private void Update()

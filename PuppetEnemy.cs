@@ -1,8 +1,10 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using PuppetEnemy.Modules;
 using REPOLib.Modules;
 using UnityEngine;
 
@@ -29,7 +31,7 @@ public class PuppetEnemy : BaseUnityPlugin
 
         Logger.LogInfo($"{Info.Metadata.GUID} v{Info.Metadata.Version} has loaded!");
     }
-
+    
     internal void Patch()
     {
         Harmony ??= new Harmony(Info.Metadata.GUID);
@@ -38,7 +40,6 @@ public class PuppetEnemy : BaseUnityPlugin
         
         Logger.LogInfo("Loading assets...");
         LoadAssets();
-        
         Harmony.PatchAll();
     }
 
@@ -49,18 +50,12 @@ public class PuppetEnemy : BaseUnityPlugin
     
     private static void LoadAssets()
     {
+        Logger.LogDebug("Loading Puppet bundle...");
         AssetBundle puppetAssetBundle = LoadAssetBundle("puppet");
-        Logger.LogInfo("Loaded Puppet asset bundle!");
-        Logger.LogInfo("Loading Puppet enemy prefab...");
-        GameObject puppetPrefab = puppetAssetBundle.LoadAsset<GameObject>("Assets/REPO/Mods/plugins/PuppetEnemy/Enemy - Puppet.prefab");
-        
-        NetworkPrefabs.RegisterNetworkPrefab(puppetPrefab);
-        
-        Logger.LogInfo("Loading Puppet enemy setup...");
+        Logger.LogDebug("Loading Puppet EnemySetup...");
         EnemySetup puppetEnemySetup = puppetAssetBundle.LoadAsset<EnemySetup>("Assets/REPO/Mods/plugins/PuppetEnemy/Enemy - Puppet.asset");
-        
+        Logger.LogDebug("Registering Puppet enemy...");
         Enemies.RegisterEnemy(puppetEnemySetup);
-        
         Logger.LogDebug("Loaded Puppet enemy!");
     }
     

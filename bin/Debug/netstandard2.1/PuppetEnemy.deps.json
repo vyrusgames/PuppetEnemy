@@ -11,10 +11,10 @@
         "dependencies": {
           "BepInEx.Analyzers": "1.0.8",
           "BepInEx.Core": "5.4.21",
-          "Linkoid.Repo.Plugin.Build": "0.1.0",
+          "Linkoid.Repo.Plugin.Build": "0.2.0",
           "R.E.P.O.GameLibs.Steam": "0.1.2-ngd.0",
           "UnityEngine.Modules": "2022.3.21",
-          "Zehs.REPOLib": "1.2.0"
+          "Zehs.REPOLib": "1.3.0"
         },
         "runtime": {
           "PuppetEnemy.dll": {}
@@ -48,10 +48,10 @@
           }
         }
       },
-      "Linkoid.Repo.Common.Build/0.1.0": {},
-      "Linkoid.Repo.Plugin.Build/0.1.0": {
+      "Linkoid.Repo.Common.Build/0.2.0": {},
+      "Linkoid.Repo.Plugin.Build/0.2.0": {
         "dependencies": {
-          "Linkoid.Repo.Common.Build": "0.1.0"
+          "Linkoid.Repo.Common.Build": "0.2.0"
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -374,7 +374,7 @@
         }
       },
       "UnityEngine.Modules/2022.3.21": {},
-      "Zehs.REPOLib/1.2.0": {
+      "Zehs.REPOLib/1.3.0": {
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "BepInEx.PluginInfoProps": "2.1.0",
@@ -383,8 +383,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/REPOLib.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
           }
         }
       }
@@ -431,19 +431,19 @@
       "path": "harmonyx/2.7.0",
       "hashPath": "harmonyx.2.7.0.nupkg.sha512"
     },
-    "Linkoid.Repo.Common.Build/0.1.0": {
+    "Linkoid.Repo.Common.Build/0.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HAmUc8aGW+JOxxDZqf9EgS1eyJqP5X/LyIdn5U4MpfQE3/oQpvrwzUJFJ8POsmrbzyJ2LM/jFKFM40jnu1i/TQ==",
-      "path": "linkoid.repo.common.build/0.1.0",
-      "hashPath": "linkoid.repo.common.build.0.1.0.nupkg.sha512"
+      "sha512": "sha512-R87vbsq0nChrnYSrm8oTyiFI+hDK4tPw/+el1t2Ky0vrd62mWQ7xY+YFK1JvpFUoXOBpdSlnUBWIe3E2G8LZ0Q==",
+      "path": "linkoid.repo.common.build/0.2.0",
+      "hashPath": "linkoid.repo.common.build.0.2.0.nupkg.sha512"
     },
-    "Linkoid.Repo.Plugin.Build/0.1.0": {
+    "Linkoid.Repo.Plugin.Build/0.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Gh0II+5hYA/tGryVIreYAKs6lzMj683mUzlgPokR8hAtTpdW+SCpWpgzbbilDU/l6rSMRH1crAvQhzr5Stgy2Q==",
-      "path": "linkoid.repo.plugin.build/0.1.0",
-      "hashPath": "linkoid.repo.plugin.build.0.1.0.nupkg.sha512"
+      "sha512": "sha512-5Rc+KaV4Qu6Aytt7v5Mb6C63ZvNu6y+UTCj8Dzbr5USXaNKffZpEPJhLpm7cqsUfVfvq80glFXswG9AEpsQIow==",
+      "path": "linkoid.repo.plugin.build/0.2.0",
+      "hashPath": "linkoid.repo.plugin.build.0.2.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -690,12 +690,12 @@
       "path": "unityengine.modules/2022.3.21",
       "hashPath": "unityengine.modules.2022.3.21.nupkg.sha512"
     },
-    "Zehs.REPOLib/1.2.0": {
+    "Zehs.REPOLib/1.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9ISOc8IpQ0a9O85hOohrfsEdqSK/imxM0CQoSsD7lkECRZjoCxaSXLIiBf4fLDzRGrv3eq1E7r1jp/drT7l/Eg==",
-      "path": "zehs.repolib/1.2.0",
-      "hashPath": "zehs.repolib.1.2.0.nupkg.sha512"
+      "sha512": "sha512-RrWRQmGQ+u8VlMAK2LXdF1pqp/CKAak4xhyQFPt9oUZzvLj23fvbTG+TkVwR1SvSdUz5vGI1rjyXM+Xke7tqIw==",
+      "path": "zehs.repolib/1.3.0",
+      "hashPath": "zehs.repolib.1.3.0.nupkg.sha512"
     }
   }
 }

@@ -54,26 +54,26 @@ public class EnemyPuppetAnimationController : MonoBehaviour
     
     public void PlayRoamSound()
     {
-        roamSounds.Play(controller.Enemy.CenterTransform.position);
+        roamSounds.Play(controller.transform.position);
     }
     
     public void PlayVisionSound()
     {
-        visionSounds.Play(controller.Enemy.CenterTransform.position);
+        visionSounds.Play(controller.transform.position);
     }
     
     public void PlayCuriousSound()
     {
-        curiousSounds.Play(controller.Enemy.CenterTransform.position);
+        curiousSounds.Play(controller.transform.position);
     }
     
     public void PlayHurtSound()
     {
-        hurtSounds.Play(controller.Enemy.CenterTransform.position);
+        hurtSounds.Play(controller.transform.position);
     }
     
     public void PlayDeathSound()
     {
-        deathSound.Play(controller.Enemy.CenterTransform.position);
+        deathSound.Play(controller.transform.position);
     }
 }
