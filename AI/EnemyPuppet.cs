@@ -208,9 +208,9 @@ public class EnemyPuppet : MonoBehaviour
     
     private void RotationLogic()
     {
-        if (EnemyUtil.GetAgentVelocity().normalized.magnitude > 0.1f)
+        if (EnemyUtil.GetAgentVelocity(_navMeshAgent).normalized.magnitude > 0.1f)
         {
-            _horizontalRotationTarget = Quaternion.LookRotation(EnemyUtil.GetAgentVelocity().normalized);
+            _horizontalRotationTarget = Quaternion.LookRotation(EnemyUtil.GetAgentVelocity(_navMeshAgent).normalized);
             _horizontalRotationTarget.eulerAngles = new Vector3(0f, _horizontalRotationTarget.eulerAngles.y, 0f);
         }
         if (currentState == State.Spawn || currentState == State.Idle || currentState == State.Roam || currentState == State.Investigate || currentState == State.Leave)
