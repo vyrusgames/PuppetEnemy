@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace PuppetEnemy;
 
-[BepInPlugin("VyrusGames.PuppetEnemy", "PuppetEnemy", "1.0")]
+[BepInPlugin("VyrusGames.PuppetEnemy", "PuppetEnemy", "1.1.0")]
 [BepInDependency(REPOLib.MyPluginInfo.PLUGIN_GUID, BepInDependency.DependencyFlags.HardDependency)]
 public class PuppetEnemy : BaseUnityPlugin
 {

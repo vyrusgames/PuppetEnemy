@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>11</LangVersion>
+    <Nullable>enable</Nullable>
+    <Authors>Vyrus Games</Authors>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <!-- Add Package Sources -->
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.windows10ce.com/nuget/v3/index.json
+    </RestoreAdditionalProjectSources>
+  </PropertyGroup>
+
+  <!-- Package References -->
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" IncludeAssets="build" />
+    <PackageReference Include="Linkoid.Repo.Plugin.Build" Version="*" PrivateAssets="all" />
+    
+    <PackageReference Include="BepInEx.Core" Version="5.*" ExcludeAssets="runtime" />
+    <PackageReference Include="UnityEngine.Modules" Version="2022.3.21" IncludeAssets="compile" PrivateAssets="all"/>
+    <PackageReference Include="Zehs.REPOLib" Version="1.*" />
+  </ItemGroup>
+
+</Project>
