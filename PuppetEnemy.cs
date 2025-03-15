@@ -50,12 +50,7 @@ public class PuppetEnemy : BaseUnityPlugin
     private static void LoadAssets()
     {
         AssetBundle puppetAssetBundle = LoadAssetBundle("puppet");
-        Logger.LogInfo("Loaded Puppet asset bundle!");
-        Logger.LogInfo("Loading Puppet enemy prefab...");
-        GameObject puppetPrefab = puppetAssetBundle.LoadAsset<GameObject>("Assets/REPO/Mods/plugins/PuppetEnemy/Enemy - Puppet.prefab");
-        
-        NetworkPrefabs.RegisterNetworkPrefab(puppetPrefab);
-        
+
         Logger.LogInfo("Loading Puppet enemy setup...");
         EnemySetup puppetEnemySetup = puppetAssetBundle.LoadAsset<EnemySetup>("Assets/REPO/Mods/plugins/PuppetEnemy/Enemy - Puppet.asset");
         
